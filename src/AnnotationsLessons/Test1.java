@@ -6,25 +6,26 @@ public class Test1 {
     }
 }
 
-class Parent{
+class Parent {
     String name;
 
     public Parent(String name) {
         this.name = name;
     }
 
-    void showIngo(){
+    void showIngo() {
         System.out.println("It is parent class. Name = " + name);
     }
 }
 
-class Child extends Parent{
+class Child extends Parent {
 
     public Child(String name) {
         super(name);
     }
 
-    void showIngo(){
+    @Override
+    void showIngo() {
         System.out.println("It is child class. Name = " + name);
     }
 }
